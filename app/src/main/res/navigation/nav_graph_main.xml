@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_graph"
+    app:startDestination="@id/repoListFragment">
+
+    <fragment
+        android:id="@+id/repoListFragment"
+        android:name="com.ekremh.github.ui.repo_list.RepoListFragment"
+        android:label="Home" >
+        <action
+            android:id="@+id/action_repoListFragment_to_repoDetailFragment"
+            app:destination="@id/repoDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/repoDetailFragment"
+        android:name="com.ekremh.github.ui.repo_detail.RepoDetailFragment"
+        android:label="{repoName}">
+        <argument
+            android:name="data"
+            app:argType="com.ekremh.github.model.github.UserRepo" />
+        <argument
+            android:name="repoName"
+            android:defaultValue="RepoDetail"
+            app:argType="string" />
+    </fragment>
+</navigation>

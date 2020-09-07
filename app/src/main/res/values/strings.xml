@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GithubRepo</string>
+    <string name="enter_username">Enter username</string>
+    <string name="submit">Submit</string>
+    <string name="empty_error">Username cannot be empty</string>
+    <string name="stars">Stars: %1$s</string>
+    <string name="open_issues">Open issues: %1$s</string>
+    <string name="home">Home</string>
+</resources>
